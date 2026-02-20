@@ -1,0 +1,12 @@
+{
+  "name": "golf-shop",
+  "version": "1.0.0",
+  "description": "Malbon-inspired golf clothing and accessories storefront with order tracking and Google Sheets export",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node --test"
+  }
+}
