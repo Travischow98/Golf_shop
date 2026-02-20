@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fairway Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">FAIRWAY CLUB</div>
+    <nav class="nav-links">
+      <a href="#shop">Shop</a>
+      <a href="#checkout">Checkout</a>
+    </nav>
+    <div class="bag-pill" aria-label="Shopping bag">
+      <span class="bag-icon">👜</span>
+      <span id="bagCount">0</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <p class="hero-eyebrow">Streetwear for the course</p>
+    <h1>Modern golf apparel with retro edge.</h1>
+    <p class="hero-sub">Clean silhouettes. Forest green + slate palette. Designed for young players who play loud and dress sharper.</p>
+    <a class="hero-cta" href="#shop">Shop New Drop</a>
+  </section>
+
+  <main class="layout">
+    <section id="shop">
+      <div class="section-title-row">
+        <h2>Featured Collection</h2>
+        <span id="orderCount">Orders: 0</span>
+      </div>
+      <div id="products" class="grid"></div>
+    </section>
+
+    <aside id="checkout" class="checkout">
+      <h2>Checkout</h2>
+      <p class="checkout-caption">We will send your order details directly to our order sheet.</p>
+      <form id="orderForm">
+        <label>Full Name<input name="customerName" required /></label>
+        <label>Email<input name="email" type="email" required /></label>
+        <label>Phone<input name="phone" required /></label>
+        <button type="submit">Place Order</button>
+      </form>
+      <p id="result" role="status"></p>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
